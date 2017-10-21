@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
     "start": "webpack-dev-server --config config/webpack.dev.js",
-    "precommit": "lint-staged"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
