@@ -1,6 +1,11 @@
+// require npm modules
+const glob = require('glob-all');
+const path = require('path');
+
 // require plugins
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 
 // require common webpack file
 const common = require('./webpack.common');
@@ -18,6 +23,10 @@ module.exports = merge(common, {
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
       },
+    }),
+    new PurifyCSSPlugin({
+      minimize: true,
+      paths: glob.sync(path.resolve(__dirname, '../src/*.html')),
     }),
   ],
 });

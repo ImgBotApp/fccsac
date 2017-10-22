@@ -12,7 +12,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.[hash].js',
     publicPath: '/',
   },
   module: {
@@ -34,8 +34,11 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.(css|scss)$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader'],
+        }),
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -48,8 +51,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
-    new ExtractTextPlugin('index.css'),
+    new CleanWebpackPlugin(['dist', '.tmp', '.nyc_output'], {
+      root: path.resolve(__dirname, '../'),
+      verbose: true,
+    }),
+    new ExtractTextPlugin('[name].[contenthash].css'),
     new HtmlWebpackPlugin({
       hash: true,
       title: 'freeCodeCamp Sacramento',
