@@ -51,7 +51,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], {
+    new CleanWebpackPlugin(['dist', '.tmp', '.nyc_output'], {
       root: path.resolve(__dirname, '../'),
       verbose: true,
     }),
