@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "lts/*"
+  - "8"
+cache: yarn
+install:
+  - yarn install
+script:
+  - yarn test
+notifications:
+  on_success: never
+  on_failure: change
