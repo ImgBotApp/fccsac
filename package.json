@@ -11,7 +11,7 @@
     "build": "webpack --config config/webpack.prod.js",
     "start": "webpack-dev-server --config config/webpack.dev.js --color",
     "lint": "eslint .",
-    "test": "mocha-webpack --glob \"*.test.js\" test",
+    "test": "npm run lint && mocha-webpack --glob \"*.test.js\" test",
     "coverage": "nyc mocha-webpack --timeout=3000"
   },
   "devDependencies": {
