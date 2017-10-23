@@ -52,8 +52,8 @@ module.exports = {
         loader: 'file-loader',
       },
       {
-        test: /\.html$/,
-        use: 'raw-loader',
+        test: /\.pug$/,
+        use: 'pug-loader',
       },
     ],
   },
@@ -66,7 +66,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       title: 'freeCodeCamp Sacramento',
-      template: 'assets/index.html',
+      template: 'assets/index.pug',
     }),
   ],
 };

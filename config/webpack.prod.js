@@ -26,7 +26,7 @@ module.exports = merge(common, {
     }),
     new PurifyCSSPlugin({
       minimize: true,
-      paths: glob.sync(path.resolve(__dirname, '../assets/*.html')),
+      paths: glob.sync(path.resolve(__dirname, '../assets/*.pug')),
     }),
   ],
 });
