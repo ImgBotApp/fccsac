@@ -26,7 +26,7 @@ The following behaviors are expected and requested of all community members:
 *   Refrain from demeaning, discriminatory, or harassing behavior and speech.
 *   Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
 *   Remember that community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
-*   Promoting content, products, or services with disclosure to your affliation to said promoted material.
+*   Promoting content, products, or services with disclosure of your affliation to the said promoted material.
 
 ## 4. Unacceptable Behavior
 
@@ -57,17 +57,15 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## 6. Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. lebilly87@gmail.com.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible.
 
-
+lebilly87@gmail.com
 
 Additionally, community organizers are available to help community members engage with local law enforcement or to otherwise help those experiencing unacceptable behavior feel safe. In the context of in-person events, organizers will also provide escorts as desired by the person experiencing distress.
 
 ## 7. Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Free Code Camp Sacramento with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
-
-
+If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify freeCodeCamp Sacramento with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
 
 ## 8. Scope
 
